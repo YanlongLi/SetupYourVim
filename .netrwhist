@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/tmp/vim-quickrun-markdown-gfm-master/autoload/quickrun'
+let g:netrw_dirhist_2='/home/qingxiao/.vim/ftplugin'
+let g:netrw_dirhist_3='/home/qingxiao/.thunderbird/4h5f5trb.default/extensions'
+let g:netrw_dirhist_4='/home/qingxiao/.vim/indent'
+let g:netrw_dirhist_5='/home/qingxiao/.config/Trolltech'
+let g:netrw_dirhist_6='/home/qingxiao/.config/QtProject'
