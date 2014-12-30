@@ -15,7 +15,7 @@ set laststatus=2                " Always show status bar
 
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc,CVS/,tags
 
-" lansunlong define
+" self define
 filetype plugin on
 filetype indent on
 set shellslash
