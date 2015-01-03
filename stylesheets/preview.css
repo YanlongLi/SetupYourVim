@@ -24,6 +24,11 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+	text-decoration: none;
+	border-bottom: 1px solid #4183C4;
+}
+
 a.absent {
   color: #cc0000;
 }
@@ -405,8 +410,6 @@ pre code, pre tt {
  * Self Define
  */
 strong {
-	text-decoration: underline;
-}
-em {
-	text-decoration: underline;
+	font-style: italic;
+	color: #000000;
 }
