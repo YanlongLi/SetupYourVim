@@ -78,6 +78,9 @@ let g:table_mode_delimiter = ' '
 
 "
 set nohlsearch
+
+" disable errorbells
+set vb " visualbell
 " ghmarkdown
 " augroup markdown
 "     au!
