@@ -3,16 +3,21 @@
 
 ## Installed Plugins
 
+- [vim-auto-pairs][]
+- [vim-supertab][]
 - [vim-table-mode][]
+- [vim-table-mode usage][vim tab-mode usage]
 - [vim-preview][]
+- [vim-css-color][]
+- [taglist][vim taglist]
+- [bufkill][vim bufkill]
 - [vCoolor][]
 - [jade plugin][]
-- [vim-css-color][]
 
 ## Other Plugins
 
-- [vim-auto-pairs][]
-- [vim-supertab][]
+- [other][how to make vim good ide]
+
 
 
 
@@ -23,3 +28,7 @@
 [vim-supertab]: https://github.com/ervandew/supertab
 [vCoolor]: https://github.com/KabbAmine/vCoolor.vim
 [vim-css-color]: https://github.com/ap/vim-css-color
+[vim tab-mode usage]: http://howiefh.github.io/2014/04/29/vim-table-mode/
+[vim bufkill]: http://www.vim.org/scripts/script.php?script_id=1147
+[vim taglist]: http://www.vim.org/scripts/script.php?script_id=273
+[how to make vim good ide]: http://news.html5tricks.com/how-to-make-vim-good-ide.html
