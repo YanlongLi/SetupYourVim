@@ -1,7 +1,7 @@
 #!/bin/bash
 
 vimrc_backup_path='vimrc'
-vimrc_path='$HOME/.vimrc'
+vimrc_path="$HOME/.vimrc"
 if [ -e $vimrc_path ]
 then
 	rsync -v $vimrc_path $vimrc_backup_path
