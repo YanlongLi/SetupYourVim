@@ -5,16 +5,14 @@
 
 - [vim-table-mode][]
 - [vim-preview][]
-
+- [vCoolor][]
+- [jade plugin][]
 
 ## Other Plugins
 
 - [vim-auto-pairs][]
 - [vim-supertab][]
 
-## Log
-
-add [jade plugin][]
 
 
 [jade plugin]: https://github.com/digitaltoad/vim-jade
@@ -22,3 +20,4 @@ add [jade plugin][]
 [vim-preview]: https://github.com/greyblake/vim-preview
 [vim-auto-pairs]: https://github.com/jiangmiao/auto-pairs
 [vim-supertab]: https://github.com/ervandew/supertab
+[vCoolor]: https://github.com/KabbAmine/vCoolor.vim
