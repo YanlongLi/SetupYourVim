@@ -7,6 +7,7 @@
 - [vim-preview][]
 - [vCoolor][]
 - [jade plugin][]
+- [vim-css-color][]
 
 ## Other Plugins
 
@@ -21,3 +22,4 @@
 [vim-auto-pairs]: https://github.com/jiangmiao/auto-pairs
 [vim-supertab]: https://github.com/ervandew/supertab
 [vCoolor]: https://github.com/KabbAmine/vCoolor.vim
+[vim-css-color]: https://github.com/ap/vim-css-color

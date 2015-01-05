@@ -39,7 +39,7 @@ if(!exists('g:PreviewCSSPath'))
     let g:PreviewCSSPath     = expand('<sfile>') . '/../../stylesheets/preview.css'
 endif
 if(!exists('g:PreviewMarkdownExt'))
-    let g:PreviewMarkdownExt = 'markdown,md,mkd,mkdn,mdown'
+    let g:PreviewMarkdownExt = 'markdown,md,mk,mkd,mkdn,mdown,ghmarkdown'
 endif
 if(!exists('g:PreviewTextileExt'))
     let g:PreviewTextileExt  = 'textile'
