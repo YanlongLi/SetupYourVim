@@ -1,4 +1,6 @@
+"echo 'gui:' has("gui_running") 'term:' &t_Co+0
 " ===========================================================================================================
+set t_Co=256 
 set mouse=c       											        " no mouse to command line mode ====
 set nohlsearch    											        " highlight for search 
 
@@ -19,6 +21,7 @@ syntax on
 
 filetype plugin on
 filetype indent on
+
 
 " ===========================================================================================================
 " ======================================== status lines 
@@ -87,9 +90,8 @@ let g:table_mode_delimiter = ' '        " Use this option to define the delimite
 set vb " visualbell
 
 " ===========================================================================================================
-" ======================================== ghmarkdown
+" ======================================== vim-markdown
 " ===========================================================================================================
-au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 
 
 " ===========================================================================================================
@@ -97,3 +99,14 @@ au BufNewFile,BufRead *.md,*.markdown setlocal filetype=ghmarkdown
 " ===========================================================================================================
 let g:vcoolor_map = '<leader>o'
 
+
+" ===========================================================================================================
+" ======================================== Configure for vim-css-color
+" ===========================================================================================================
+let g:cssColorVimDoNotMessMyUpdatetime = 1
+
+
+augroup javascript
+  au BufReadPre * setlocal foldmethod=indent
+" au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
+augroup END
