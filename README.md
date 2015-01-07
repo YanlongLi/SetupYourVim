@@ -10,6 +10,7 @@
 - [vim-preview][]
 - [vim-css-color][]
 - [vim-markdown][]
+- [tabular][]
 - [taglist][vim taglist]
 - [bufkill][vim bufkill]
 - [vCoolor][]
@@ -34,3 +35,4 @@
 [vim taglist]: http://www.vim.org/scripts/script.php?script_id=273
 [how to make vim good ide]: http://news.html5tricks.com/how-to-make-vim-good-ide.html
 [vim-markdown]: https://github.com/plasticboy/vim-markdown
+[tabular]: https://github.com/godlygeek/tabular
