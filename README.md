@@ -9,6 +9,7 @@
 - [vim-table-mode usage][vim tab-mode usage]
 - [vim-preview][]
 - [vim-css-color][]
+- [vim-markdown][]
 - [taglist][vim taglist]
 - [bufkill][vim bufkill]
 - [vCoolor][]
@@ -32,3 +33,4 @@
 [vim bufkill]: http://www.vim.org/scripts/script.php?script_id=1147
 [vim taglist]: http://www.vim.org/scripts/script.php?script_id=273
 [how to make vim good ide]: http://news.html5tricks.com/how-to-make-vim-good-ide.html
+[vim-markdown]: https://github.com/plasticboy/vim-markdown
