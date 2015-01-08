@@ -6,7 +6,7 @@ function! s:SetBufferOptDefault(opt, val) "{{{2
 endfunction
 
 function! s:Map(map, to, mode) "{{{2
-  if !hasmapto(a:map, a:mode)
+  if !empty(a:to) && !hasmapto(a:map, a:mode)
     for l:mode in split(a:mode, '.\zs')
       execute l:mode . 'map <buffer>' a:to a:map
     endfor
@@ -97,7 +97,11 @@ function! s:SetActive(bool) "{{{2
   let b:table_mode_active = a:bool
   call s:ToggleSyntax()
   call s:ToggleMapping()
-  if b:table_mode_active | echo "table-mode enabled" | else | echo "table-mode disabled" | endif
+  if tablemode#IsActive()
+    doautocmd User TableModeEnabled
+  else
+    doautocmd User TableModeDisabled
+  endif
 endfunction
 
 function! s:ConvertDelimiterToSeparator(line, ...) "{{{2

@@ -16,8 +16,10 @@ endfunction
 
 " Set Global Defaults {{{1
 call s:SetGlobalOptDefault('table_mode_corner', '+')
+call s:SetGlobalOptDefault('table_mode_verbose', 0)
 call s:SetGlobalOptDefault('table_mode_separator', '|')
 call s:SetGlobalOptDefault('table_mode_fillchar', '-')
+call s:SetGlobalOptDefault('table_mode_header_fillchar', '-')
 call s:SetGlobalOptDefault('table_mode_map_prefix', '<Leader>t')
 call s:SetGlobalOptDefault('table_mode_toggle_map', 'm')
 call s:SetGlobalOptDefault('table_mode_always_active', 0)
@@ -109,14 +111,20 @@ nnoremap <silent> <Plug>(table-mode-echo-cell) :call <SID>TableEchoCell()<CR>
 nnoremap <silent> <Plug>(table-mode-sort) :call tablemode#spreadsheet#Sort()<CR>
 
 if !hasmapto('<Plug>(table-mode-tableize)')
-  nmap <Leader>tt <Plug>(table-mode-tableize)
-  xmap <Leader>tt <Plug>(table-mode-tableize)
+  exec "nmap " . g:table_mode_map_prefix . "t <Plug>(table-mode-tableize)"
+  exec "xmap " . g:table_mode_map_prefix . "t <Plug>(table-mode-tableize)"
 endif
 
 if !hasmapto('<Plug>(table-mode-tableize-delimiter)')
   xmap <Leader>T <Plug>(table-mode-tableize-delimiter)
 endif
 
+augroup TableMode "{{{1
+  au!
+
+  autocmd User TableModeEnabled call tablemode#logger#log('Table Mode Enabled')
+  autocmd User TableModeDisabled call tablemode#logger#log('Table Mode Disabled')
+augroup END
 " Avoiding side effects {{{1
 let &cpo = s:save_cpo
 
