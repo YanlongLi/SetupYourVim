@@ -222,7 +222,7 @@ dl dd > :last-child {
 }
 
 blockquote {
-  border-left: 4px solid #dddddd;
+  border-left: 4px solid #8D8686;
   padding: 0 15px;
   color: #777777;
 }
@@ -411,5 +411,6 @@ pre code, pre tt {
  */
 strong {
 	font-style: italic;
-	color: #878787;
+	color: #A85E21;
+	font-size: 16px;
 }
