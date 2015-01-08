@@ -341,6 +341,8 @@ function! s:Markdown_Toc(...)
     set nomodified
     set nomodifiable
     normal! gg
+		inoremap <buffer> <silent> q <C-o>:close<CR>
+		nnoremap <buffer> <silent> q <C-o>:close<CR>
 endfunction
 
 " Wrapper to do move commands in visual mode.
