@@ -15,6 +15,7 @@
 - [bufkill][vim bufkill]
 - [vCoolor][]
 - [jade plugin][]
+- [scss-syntax][]
 
 ## Other Plugins
 
@@ -36,3 +37,4 @@
 [how to make vim good ide]: http://news.html5tricks.com/how-to-make-vim-good-ide.html
 [vim-markdown]: https://github.com/plasticboy/vim-markdown
 [tabular]: https://github.com/godlygeek/tabular
+[scss-syntax]: https://github.com/cakebaker/scss-syntax.vim
