@@ -16,6 +16,7 @@
 - [vCoolor][]
 - [jade plugin][]
 - [scss-syntax][]
+- [webapi-vim][]:2015-01-23
 
 ## Other Plugins
 
@@ -38,3 +39,4 @@
 [vim-markdown]: https://github.com/plasticboy/vim-markdown
 [tabular]: https://github.com/godlygeek/tabular
 [scss-syntax]: https://github.com/cakebaker/scss-syntax.vim
+[webapi-vim]: https://github.com/mattn/webapi-vim
