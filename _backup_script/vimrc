@@ -114,3 +114,8 @@ augroup javascript
   au BufReadPre * setlocal foldmethod=indent
 " au BufWinEnter * if &fdm == 'indent' | setlocal foldmethod=manual | endif
 augroup END
+
+" ===========================================================================================================
+" ======================================== Configure for Explore
+" ===========================================================================================================
+let g:netrw_browse_split = 2
