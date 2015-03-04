@@ -18,6 +18,7 @@
 - [scss-syntax][]
 - [webapi-vim][]: 2015-01-23
 - [gist-vim][]: 2015-01-23
+- [tagbar][]: 2015-03-04
 
 ## Other Plugins
 
@@ -42,3 +43,4 @@
 [scss-syntax]: https://github.com/cakebaker/scss-syntax.vim
 [webapi-vim]: https://github.com/mattn/webapi-vim
 [gist-vim]: https://github.com/mattn/gist-vim
+[tagbar]: https://github.com/majutsushi/tagbar 
