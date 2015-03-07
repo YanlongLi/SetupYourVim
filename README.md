@@ -19,6 +19,11 @@
 - [webapi-vim][]: 2015-01-23
 - [gist-vim][]: 2015-01-23
 - [tagbar][]: 2015-03-04
+- [nerdcommenter][]: 2015-03-07
+
+	```
+	let g:NERDSpaceDelims = 1
+	```
 
 ## Other Plugins
 
@@ -44,3 +49,4 @@
 [webapi-vim]: https://github.com/mattn/webapi-vim
 [gist-vim]: https://github.com/mattn/gist-vim
 [tagbar]: https://github.com/majutsushi/tagbar 
+[nerdcommenter]: https://github.com/scrooloose/nerdcommenter
