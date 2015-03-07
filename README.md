@@ -24,6 +24,18 @@
 	```
 	let g:NERDSpaceDelims = 1
 	```
+- [syntastic][]: 2015-03-07
+
+	```
+	set statusline+=%#warningmsg#
+	set statusline+=%{SyntasticStatuslineFlag()}
+	set statusline+=%*
+
+	let g:syntastic_always_populate_loc_list = 1
+	let g:syntastic_auto_loc_list = 1
+	let g:syntastic_check_on_open = 1
+	let g:syntastic_check_on_wq = 0
+	```
 
 ## Other Plugins
 
@@ -50,3 +62,4 @@
 [gist-vim]: https://github.com/mattn/gist-vim
 [tagbar]: https://github.com/majutsushi/tagbar 
 [nerdcommenter]: https://github.com/scrooloose/nerdcommenter
+[syntastic]: https://github.com/scrooloose/syntastic#requirements
