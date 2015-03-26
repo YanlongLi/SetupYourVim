@@ -36,6 +36,7 @@
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 	```
+- [authorinfo][]: 2015-03-26
 
 ## Other Plugins
 
@@ -63,3 +64,4 @@
 [tagbar]: https://github.com/majutsushi/tagbar 
 [nerdcommenter]: https://github.com/scrooloose/nerdcommenter
 [syntastic]: https://github.com/scrooloose/syntastic#requirements
+[authorinfo]: https://github.com/vim-scripts/AuthorInfo
