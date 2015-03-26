@@ -99,7 +99,7 @@ function s:AddTitle()
     let newline = getline('.')
     if oldline != newline
         let hasMul = 1
-        let preChar = '#'
+        let preChar = '*'
     else
         exec 'normal '.s:t_mapleader.'cl'
         let newline = getline('.')
