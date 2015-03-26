@@ -36,6 +36,15 @@
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 	```
+- [authorinfo][]: 2015-03-26
+	changed file line 102, # to *
+	```
+	let g:vimrc_author='YanlongLi'
+	let g:vimrc_email='lansunlong@gmail.com'
+	let g:vimrc_homepage='' 
+	nmap <F4> :AuthorInfoDetect<cr> 
+
+	```
 
 ## Other Plugins
 
@@ -63,3 +72,4 @@
 [tagbar]: https://github.com/majutsushi/tagbar 
 [nerdcommenter]: https://github.com/scrooloose/nerdcommenter
 [syntastic]: https://github.com/scrooloose/syntastic#requirements
+[authorinfo]: https://github.com/vim-scripts/AuthorInfo
