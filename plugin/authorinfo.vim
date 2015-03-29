@@ -128,6 +128,8 @@ function s:AddTitle()
     normal o
     call setline('.',noTypeChar.preChar.'      Version: 0.0.1')
     normal o
+    call setline('.',noTypeChar.preChar.'   CreateTime: '.strftime("%Y-%m-%d %H:%M:%S"))
+    normal o
     call setline('.',noTypeChar.preChar.'   LastChange: '.strftime("%Y-%m-%d %H:%M:%S"))
     normal o
     call setline('.',noTypeChar.preChar.'      History:')
