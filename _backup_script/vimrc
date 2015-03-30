@@ -16,6 +16,11 @@ set autoindent
 set ts=2
 set sw=2
 set showcmd
+set wildmenu
+set lazyredraw
+set foldmethod=indent
+set foldenable
+let mapleader=","
 
 syntax on
 
@@ -151,3 +156,7 @@ let g:vimrc_author='YanlongLi'
 let g:vimrc_email='lansunlong@gmail.com'
 let g:vimrc_homepage='' 
 nmap <F4> :AuthorInfoDetect<cr> 
+
+" =======================================
+ab #c /********************************************************\r\r\r********************************************************/
+ab #l /*------------------------------------------------------*/

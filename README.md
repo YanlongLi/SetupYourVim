@@ -36,8 +36,8 @@
 	let g:syntastic_check_on_open = 1
 	let g:syntastic_check_on_wq = 0
 	```
-- [authorinfo][]: 2015-03-26
-	changed file line 102, # to *
+- [authorinfo][]: 2015-03-26, changed file line 102, # to *
+
 	```
 	let g:vimrc_author='YanlongLi'
 	let g:vimrc_email='lansunlong@gmail.com'
@@ -49,6 +49,7 @@
 ## Other Plugins
 
 - [other][how to make vim good ide]
+- add some [config option](http://dougblack.io/words/a-good-vimrc.html): [2015-03-30]
 
 
 
