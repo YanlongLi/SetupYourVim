@@ -1,0 +1,16 @@
+README*
+\.*
+_assets/
+*.*
+test/
+tests/
+example/
+
+ChangeLog
+Gemfile
+[Mm]akefile
+LICEN[CS]E
+
+Rakefile
+
+*.pyc
