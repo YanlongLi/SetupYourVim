@@ -134,10 +134,13 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_tex_checkers = [] 
 let g:syntastic_python_checkers = [] 
 
+let g:syntastic_cpp_compiler = 'clang++'
+let g:syntastic_cpp_compiler_options = ' -std=c++11 -stdlib=libc++ -lc++abi'
+
 
 " ======================================== authorinfo ===========================================
-let g:vimrc_author=''
-let g:vimrc_email=''
+let g:vimrc_author='YanlongLi'
+let g:vimrc_email='lansunlong@gmail.com'
 let g:vimrc_homepage='' 
 nmap <F4> :AuthorInfoDetect<cr> 
 
@@ -273,5 +276,3 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
-
-" ======================================== clang_complete ===========================================
