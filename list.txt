@@ -29,3 +29,4 @@ https://github.com/alvan/vim-closetag
 https://github.com/Shougo/neocomplete.vim
 https://github.com/ervandew/supertab
 https://github.com/Rip-Rip/clang_complete
+https://github.com/majutsushi/tagbar
