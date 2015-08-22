@@ -37,6 +37,9 @@ filetype indent on
 set vb " visualbell
 highlight Search ctermbg=darkgrey
 
+" ======================================== auto-pairs ===========================================
+let g:AutoPairsFlyMode = 0
+
 " ======================================== status lines  ===========================================
 set statusline=%<%f\ %y[%{&ff}]%m%r%w%a\ %=%l/%L,%c%V\ %P
 set laststatus=2  								              " Always show status bar
@@ -276,3 +279,5 @@ endif
 " For perlomni.vim setting.
 " https://github.com/c9s/perlomni.vim
 let g:neocomplete#sources#omni#input_patterns.perl = '\h\w*->\h\w*\|\h\w*::'
+
+

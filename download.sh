@@ -64,6 +64,7 @@ echo 'nodejs'
 
 echo '==========dependency for clang_complete======='
 echo 'clang'
+echo 'libc++ libc++abi'
 
 echo '===========other dependency===================='
 echo 'curl wget'
