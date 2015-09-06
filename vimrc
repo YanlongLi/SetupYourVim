@@ -38,7 +38,7 @@ set vb " visualbell
 highlight Search ctermbg=darkgrey
 
 " ======================================== auto-pairs ===========================================
-let g:AutoPairsFlyMode = 0
+" let g:AutoPairsFlyMode = 1
 
 " ======================================== status lines  ===========================================
 set statusline=%<%f\ %y[%{&ff}]%m%r%w%a\ %=%l/%L,%c%V\ %P
@@ -120,7 +120,7 @@ let g:netrw_browse_split = 2
 
 " ======================================== tagbar ===========================================
 " nmap <F9> :TagbarToggle<CR>
-let g:tagbar_left = 1
+" let g:tagbar_left = 1
 " ======================================== NERDCommenter ===========================================
 let g:NERDSpaceDelims = 1
 
@@ -148,11 +148,16 @@ let g:vimrc_homepage=''
 nmap <F4> :AuthorInfoDetect<cr> 
 
 " ======================================== ultisnips ===========================================
-"
+
+" make YCM compatible with UltiSnips (using supertab)
+
 let g:UltiSnipsSnippetDirectories=["UltiSnips"]
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger = "<tab>"
+let g:UltiSnipsJumpForwardTrigger = "<tab>"
+let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
+" let g:UltiSnipsExpandTrigger="<ENTER>"
+" let g:UltiSnipsJumpForwardTrigger="<c-b>"
+" let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 " If you want :UltiSnipsEdit to split your window.
 " let g:UltiSnipsEditSplit="vertical""
 
@@ -172,8 +177,8 @@ let g:calendar_google_calendar = 1
 let g:calendar_google_task = 1
 
 " ======================================== vimwiki===========================================
-let g:vimwiki_list = [{'path': '/srv/vimwiki/mywiki/', 
-			\ 'path_html': '/srv/vimwiki/mywiki_html',
+let g:vimwiki_list = [{'path': '~/Dropbox/vimwiki/mywiki/', 
+			\ 'path_html': '/var/www/html/wiki',
 			\ 'css_name': 'style.css',
       \ 'nested_syntaxes': {'python': 'python', 'c++': 'cpp', "javascript": "js"},
 			\ 'auto_export': 0},{
@@ -194,13 +199,19 @@ let g:vimwiki_global_ext = 0
 " ======================================== closetag ===========================================
 let g:closetag_filenames = "*.html"
 
+" ======================================== YouCompleteMe===========================================
+
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
+let g:ycm_key_list_select_completion = ['<C-n>', '<Down>']
+let g:ycm_key_list_previous_completion = ['<C-p>', '<Up>']
+let g:SuperTabDefaultCompletionType = '<C-n>'
 
 " ======================================== neocomplete ===========================================
 "Note: This option must set it in .vimrc(_vimrc).  NOT IN .gvimrc(_gvimrc)!
 " Disable AutoComplPop.
 let g:acp_enableAtStartup = 0
 " Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
+""""" let g:neocomplete#enable_at_startup = 1
 " Use smartcase.
 let g:neocomplete#enable_smart_case = 1
 " Set minimum syntax keyword length.

@@ -53,7 +53,16 @@ cd $dl_dir;
  
 ## clone plugin files
 while IFS='' read -r line || [[ -n "$line" ]]; do
-  git clone --recursive "${line}.git"
+  t_dir="${line##*/}"  
+  if [ ! -d $t_dir ]; then
+    git clone --recursive "${line}.git"
+  fi
+  echo ">>>>> enter directory $t_dir"
+  cd  $t_dir
+  git pull
+  git submodule update --init --recursive
+  cd ..
+  echo "<<<<<exit directory $t_dir"
 done < '../'$lst_file
 
 echo '============dependency for vCoolor============='

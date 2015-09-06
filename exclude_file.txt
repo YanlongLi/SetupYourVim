@@ -9,6 +9,11 @@ ChangeLog
 Gemfile
 [Mm]akefile*
 LICEN[CS]E
+CONTRIBUTING.*
+COPYING.*
+.git
+.git*
+.travis.yml
 
 Rakefile
 
