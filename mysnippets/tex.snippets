@@ -1,0 +1,16 @@
+snippet multifigure "multi figure" b
+\begin{figure}[<+!htbp+>]
+	\centering
+	\subfigure[<+caption text+>]{
+		\label{fig:<+label+>}
+		\includegraphics[width=<+.8+>\textwidth]{<+file+>}
+	}
+	\hspace{1in}
+	\subfigure[<+caption text+>]{
+		\label{fig:<+label+>}
+		\includegraphics[width=<+.8+>\textwidth]{<+file+>}
+	}
+	\bicaption[fig:<+label+>]{<+index text+>}
+	{<+caption text+>}{Fig}{<+Eng text+>}
+\end{figure}
+endsnippet
