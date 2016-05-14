@@ -77,7 +77,7 @@ for url in ${lst[@]}; do
   else
     echo "remote exist: \e[1:32m$rname\e[0m"
   fi
-  if [ $rname -eq "YCM-Generator" ]; then
+  if [ $rname == "YCM-Generator" ]; then
     brname=stable
   fi
   git pull --no-ff --no-edit -s recursive -X theirs ${rname} $brname >/dev/null 2>&1
@@ -94,7 +94,7 @@ echo "=================================="
 git checkout YouCompleteMe/master
 git submodule update --init --recursive
 sed -i '1,1 s/\<python\>/python2/' install.py
-./install.py --clang-completer --system-libclang --system-boost
+./install.py --clang-completer --system-libclang --system-boost --tern-script
 git checkout install.py
 git checkout master
 # wget https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_extra_conf.py -O ~/.ycm_extra_conf.py
