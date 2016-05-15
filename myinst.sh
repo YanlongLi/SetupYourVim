@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 
 basedir=`pwd`
@@ -94,7 +94,7 @@ echo "=================================="
 git checkout YouCompleteMe/master
 git submodule update --init --recursive
 sed -i '1,1 s/\<python\>/python2/' install.py
-./install.py --clang-completer --system-libclang --system-boost --tern-script
+./install.py --system-libclang --system-boost --clang-completer --tern-completer
 git checkout install.py
 git checkout master
 # wget https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_extra_conf.py -O ~/.ycm_extra_conf.py
