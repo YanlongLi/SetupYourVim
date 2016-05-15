@@ -89,6 +89,7 @@ done
 echo "=================================="
 echo "++++ init YouCompleteMe ++++++++++"
 echo "YouCompleteMe include features of supertab, clang_complete"
+echo "boost,clang,llvm,node,nodejs,npm"
 echo "=================================="
 
 git checkout YouCompleteMe/master
@@ -105,6 +106,17 @@ echo "=================================="
 git checkout vim-jsbeautify/master
 git submodule update --init --recursive
 git checkout master
+
+echo "=================================="
+echo "++++ vim-autoformat ++++++++++++++"
+echo "formatter required, see https://github.com/Chiel92/vim-autoformat"
+echo "clang-format"
+echo "astyle"
+echo "tidy"
+echo "autopep8 for yapf, python package"
+echo "js-beautify, nodejs package"
+echo "remark, nodejs package"
+echo "=================================="
 
 # echo ==================================
 # echo ++++ init color_coded
