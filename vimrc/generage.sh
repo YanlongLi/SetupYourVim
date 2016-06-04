@@ -3,6 +3,7 @@
 __ScriptVersion="1.0"
 
 output=~/.vimrc
+backup=~/.vimrc-bak
 
 #===  FUNCTION  ================================================================
 #         NAME:  usage
@@ -14,8 +15,7 @@ function usage ()
 
     Options:
     -h|help       Display this message
-    -v|version    Display script version
-    -f|force      Force to override orignal vimrc"
+    -v|version    Display script version"
 
 }    # ----------  end of function usage  ----------
 
@@ -44,21 +44,20 @@ function generate() {
       cat $dir/$file >> $output
     fi
   done
-  sed -i '/^$/d' $output
+  # sed -i '/^$/d' $output
 }
 
 #-----------------------------------------------------------------------
 #  Handle command line arguments
 #-----------------------------------------------------------------------
 
-while getopts ":hvf" opt
+while getopts ":hv" opt
 do
   case $opt in
 
   h|help     )  usage; exit 0   ;;
 
   v|version  )  echo "$0 -- Version $__ScriptVersion"; exit 0   ;;
-  f|force    )  override=true ;;
 
   * )  echo -e "\n  Option does not exist : $OPTARG\n"
       usage; exit 1   ;;
@@ -67,9 +66,8 @@ do
 done
 shift $(($OPTIND-1))
 
-if [ -e $output ] && [ ! $override ]; then
-  cat "file $output exists, use -f to force override"
-  exit 1
+if [ -e $output ]; then
+  mv $output $backup
 fi
 
 generate;
