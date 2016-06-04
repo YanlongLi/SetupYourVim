@@ -8,4 +8,7 @@ vimrc: ./vimrc/generage.sh
 mysnip:
 	rsync -Pav $(dir_snips)/ ~/.vim/mysnippets/
 
-.PHONY: vimrc mysnip
+install: ./install.sh
+	@./install.sh
+
+.PHONY: vimrc
