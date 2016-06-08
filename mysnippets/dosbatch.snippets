@@ -1,0 +1,30 @@
+snippet getopt
+@ECHO off
+
+set arga=
+set argb=
+set argc=
+
+:loop
+IF [%1] == [] GOTO continue
+IF [%1] == [-a] (
+  set arga=%2
+  )
+IF [%1] == [-b] (
+  set argb=%2
+  )
+IF [%1] == [-c] (
+  set argd=%2
+  )
+IF [%1] == [-h] (
+  echo -a:
+  echo -b:
+  echo -c:
+  echo -h:
+  GOTO:EOF
+  )
+SHIFT & GOTO loop
+
+:continue
+
+endsnippet
