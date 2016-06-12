@@ -76,6 +76,7 @@ if has("autocmd")
 
       autocmd BufNewFile,BufRead *.patch set filetype=diff
       autocmd BufNewFile,BufRead *.diff set filetype=diff
+      autocmd BufNewFile,BufRead README set filetype=markdown
 
       autocmd Syntax diff
       \ highlight WhiteSpaceEOL ctermbg=red |
