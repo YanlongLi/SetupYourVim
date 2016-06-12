@@ -41,7 +41,8 @@ git@github.com:alvan/vim-closetag
 git@github.com:vim-scripts/bufkill.vim
 git@github.com:majutsushi/tagbar
 git@github.com:mattn/webapi-vim
-git@github.com:mattn/gist-vim
+:git@github.com:mattn/gist-vim
+git@github.com:lambdalisue/vim-gista.git
 git@github.com:dhruvasagar/vim-table-mode
 git@github.com:godlygeek/tabular
 git@github.com:maksimr/vim-jsbeautify
