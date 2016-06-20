@@ -49,7 +49,6 @@ git@github.com:maksimr/vim-jsbeautify
 git@github.com:scrooloose/nerdcommenter
 git@github.com:gerw/vim-latex-suite
 :git@github.com:jeaye/color_coded.git
-git@github.com:Valloric/YouCompleteMe
 git@github.com:rdnetto/YCM-Generator
 git@github.com:SirVer/ultisnips
 git@github.com:honza/vim-snippets
@@ -58,6 +57,7 @@ git@github.com:Chiel92/vim-autoformat
 git@github.com:kchmck/vim-coffee-script
 git@github.com:wavded/vim-stylus
 git@github.com:posva/vim-vue
+git@github.com:Valloric/YouCompleteMe
 );
 
 # ultisnips is snip engine
@@ -85,6 +85,7 @@ for url in ${lst[@]}; do
   if [ $? -eq 1 ]; then
     echo -e "\e[1;31merr: $rname\e[0m"
   fi
+  git submodule update --init --recursive
 done
 
 echo "=================================="
@@ -96,7 +97,7 @@ echo "=================================="
 git checkout YouCompleteMe/master
 git submodule update --init --recursive
 sed -i '1,1 s/\<python\>/python2/' install.py
-./install.py --system-libclang --system-boost --clang-completer --tern-completer
+./install.py --system-libclang --system-boost --clang-completer --tern-completer --omnisharp-completer
 git checkout install.py
 git checkout master
 # wget https://raw.githubusercontent.com/Valloric/ycmd/master/cpp/ycm/.ycm_extra_conf.py -O ~/.ycm_extra_conf.py
@@ -104,9 +105,9 @@ git checkout master
 echo "=================================="
 echo "++++ init vim-jsbeautify +++++++++"
 echo "=================================="
-git checkout vim-jsbeautify/master
-git submodule update --init --recursive
-git checkout master
+# git checkout vim-jsbeautify/master
+# git submodule update --init --recursive
+# git checkout master
 
 echo "=================================="
 echo "++++ vim-autoformat ++++++++++++++"
