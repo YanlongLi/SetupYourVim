@@ -4,7 +4,7 @@ dir_snips=mysnippets
 
 vimrc: ./vimrc/generage.sh
 	@$(dir_vimrc)/generage.sh
-	echo "Generage vimrc done"
+	@echo "Generate vimrc done"
 
 mysnip:
 	rsync -Pav $(dir_snips)/ ~/.vim/mysnippets/
