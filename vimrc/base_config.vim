@@ -35,6 +35,8 @@ set foldmethod=indent
 set foldenable
 let mapleader=","
 
+vnoremap // y/<C-R>"<CR>"
+
 syntax on
 
 filetype plugin on

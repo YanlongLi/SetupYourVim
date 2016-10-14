@@ -81,7 +81,7 @@ for url in ${lst[@]}; do
   if [ $rname == "YCM-Generator" ]; then
     brname=stable
   fi
-  git pull --no-ff --no-edit -s recursive -X theirs ${rname} $brname >/dev/null 2>&1
+  git pull --no-ff --no-edit --allow-unrelated-histories -s recursive -X theirs ${rname} $brname >/dev/null 2>&1
   if [ $? -eq 1 ]; then
     echo -e "\e[1;31merr: $rname\e[0m"
   fi
