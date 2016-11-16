@@ -32,7 +32,11 @@ set showcmd
 set wildmenu
 set lazyredraw
 set foldmethod=indent
-set foldenable
+set nofoldenable
+
+set number
+set relativenumber
+
 let mapleader=","
 
 vnoremap // y/<C-R>"<CR>"
