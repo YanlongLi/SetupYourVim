@@ -24,6 +24,7 @@ declare -a lst=(
 :git@github.com:vim-scripts/OmniCppComplete
 :git@github.com:vim-scripts/taglist.vim
 :git@github.com:kien/ctrlp.vim
+git@github.com:vim-scripts/git-file.vim
 git@github.com:vim-voom/VOoM
 git@github.com:vimwiki/vimwiki
 git@github.com:jiangmiao/auto-pairs
