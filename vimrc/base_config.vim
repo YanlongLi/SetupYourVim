@@ -13,6 +13,7 @@ filetype plugin indent on    " required
 set t_Co=256 
 set mouse=c       											        " no mouse to command line mode ====
 set hlsearch    											        " highlight for search 
+highlight Search gui=bold,underline cterm=bold,underline
 
 set dictionary+=~/.dictionary,~/.mail_aliases   " Dictionary
 set backupdir=~/.vim/backup,/tmp                " set backup dir
