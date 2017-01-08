@@ -31,6 +31,7 @@ function generate() {
     vim-table-mode.vim
     vimwiki.vim
     YouCompleteMe.vim
+    nerdtree.vim
     nerdcommenter.vim
     vim-latex-suite.vim
     vim-jsbeautify.vim

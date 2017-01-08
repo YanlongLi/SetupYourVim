@@ -9,11 +9,15 @@ filetype off                  " required
 
 filetype plugin indent on    " required
 
+set encoding=utf-8
+
 "echo 'gui:' has("gui_running") 'term:' &t_Co+0
 set t_Co=256 
 set mouse=c       											        " no mouse to command line mode ====
 set hlsearch    											        " highlight for search 
 highlight Search gui=bold,underline cterm=bold,underline
+highlight Search ctermbg=darkgrey
+highlight Directory guifg=#FF0000 ctermfg=red
 
 set dictionary+=~/.dictionary,~/.mail_aliases   " Dictionary
 set backupdir=~/.vim/backup,/tmp                " set backup dir
@@ -49,7 +53,6 @@ filetype indent on
 
 " disable errorbells
 set vb " visualbell
-highlight Search ctermbg=darkgrey
 
 autocmd BufNewFile,BufRead *.tsv set filetype=tsv
 
