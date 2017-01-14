@@ -60,11 +60,11 @@ declare -a lst=(
 filedir="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
 vundlefile="vundle_config.vim"
 
-output="~/.vimrc"
-backup="~/.vimrc-bak"
+output=~/.vimrc
+backup=~/.vimrc-bak
 if [ ! -z ${useVundle} ]; then
-  output="~/_vimrc"
-  backup="~/_vimrc-bak"
+  output=~/_vimrc
+  backup=~/_vimrc-bak
 fi
 
 
@@ -72,14 +72,20 @@ if [ -e $output ]; then
   mv $output $backup
 fi
 
-echo "" > $output
+echo "##" > $output
+
 if [ ! -z ${useVundle} ]; then
   echo "Generate Config with Vundle"
   cat $filedir/$vundlefile >> $output
 fi
+
 for file in ${lst[@]}; do
   if [ -e $filedir/$file ]; then
     cat $filedir/$file >> $output
   fi
 done
-# sed -i '/^$/d' $output
+
+if [ ! -z ${useVundle} ]; then
+  sed -i 's_~/\.vim/_$USERPROFILE/vimfiles/_g' $output
+  sed -i 's_~/_$USERPROFILE/_g' $output
+fi
