@@ -38,15 +38,6 @@ do
 done
 shift $(($OPTIND-1))
 
-output=/tmp/vimrc
-backup=/tmp/vimrc-bak
-# output=~/.vimrc
-# backup=~/.vimrc-bak
-
-if [ -e $output ]; then
-  mv $output $backup
-fi
-
 declare -a lst=(
   base_config.vim
   status_line.vim
@@ -68,6 +59,18 @@ declare -a lst=(
 
 filedir="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
 vundlefile="vundle_config.vim"
+
+output="~/.vimrc"
+backup="~/.vimrc-bak"
+if [ ! -z ${useVundle} ]; then
+  output="~/_vimrc"
+  backup="~/_vimrc-bak"
+fi
+
+
+if [ -e $output ]; then
+  mv $output $backup
+fi
 
 echo "" > $output
 if [ ! -z ${useVundle} ]; then
