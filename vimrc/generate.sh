@@ -1,9 +1,6 @@
-#!/usr/bin/env bash
+#!/usr/bin/bash
 
 __ScriptVersion="1.0"
-
-output=~/.vimrc
-backup=~/.vimrc-bak
 
 #===  FUNCTION  ================================================================
 #         NAME:  usage
@@ -15,50 +12,24 @@ function usage ()
 
     Options:
     -h|help       Display this message
+    -w|vundle     Use Vundle
     -v|version    Display script version"
 
 }    # ----------  end of function usage  ----------
-
-function generate() {
-  declare -a lst=(
-    base_config.vim
-    status_line.vim
-    fcitx-fix.vim
-    closetag.vim
-    vim-css-color.vim
-    vCoolor.vim
-    authorinfo.vim
-    vim-table-mode.vim
-    vimwiki.vim
-    YouCompleteMe.vim
-    nerdtree.vim
-    nerdcommenter.vim
-    vim-latex-suite.vim
-    vim-jsbeautify.vim
-    vim-autoformat.vim
-    vim-coffee-script.vim
-  );
-  local dir="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
-  echo "" > $output
-  for file in ${lst[@]}; do
-    if [ -e $dir/$file ]; then
-      cat $dir/$file >> $output
-    fi
-  done
-  # sed -i '/^$/d' $output
-}
 
 #-----------------------------------------------------------------------
 #  Handle command line arguments
 #-----------------------------------------------------------------------
 
-while getopts ":hv" opt
+while getopts ":hvw" opt
 do
   case $opt in
 
   h|help     )  usage; exit 0   ;;
 
   v|version  )  echo "$0 -- Version $__ScriptVersion"; exit 0   ;;
+
+  w|vundle   ) useVundle="true" ;;
 
   * )  echo -e "\n  Option does not exist : $OPTARG\n"
       usage; exit 1   ;;
@@ -67,8 +38,45 @@ do
 done
 shift $(($OPTIND-1))
 
+output=/tmp/vimrc
+backup=/tmp/vimrc-bak
+# output=~/.vimrc
+# backup=~/.vimrc-bak
+
 if [ -e $output ]; then
   mv $output $backup
 fi
 
-generate;
+declare -a lst=(
+  base_config.vim
+  status_line.vim
+  fcitx-fix.vim
+  closetag.vim
+  vim-css-color.vim
+  vCoolor.vim
+  authorinfo.vim
+  vim-table-mode.vim
+  vimwiki.vim
+  YouCompleteMe.vim
+  nerdtree.vim
+  nerdcommenter.vim
+  vim-latex-suite.vim
+  vim-jsbeautify.vim
+  vim-autoformat.vim
+  vim-coffee-script.vim
+);
+
+filedir="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"
+vundlefile="vundle_config.vim"
+
+echo "" > $output
+if [ ! -z ${useVundle} ]; then
+  echo "Generate Config with Vundle"
+  cat $filedir/$vundlefile >> $output
+fi
+for file in ${lst[@]}; do
+  if [ -e $filedir/$file ]; then
+    cat $filedir/$file >> $output
+  fi
+done
+# sed -i '/^$/d' $output
