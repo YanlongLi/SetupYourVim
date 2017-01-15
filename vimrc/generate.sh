@@ -72,7 +72,7 @@ if [ -e $output ]; then
   mv $output $backup
 fi
 
-echo "##" > $output
+echo "" > $output
 
 if [ ! -z ${useVundle} ]; then
   echo "Generate Config with Vundle"

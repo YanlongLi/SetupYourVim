@@ -69,6 +69,7 @@ autocmd FileType python setlocal sw=4
 autocmd FileType python setlocal nolist
 
 if has("gui_running")
+  set mouse=a
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
   elseif has("gui_macvim")
