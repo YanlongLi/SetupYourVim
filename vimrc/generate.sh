@@ -48,6 +48,7 @@ declare -a lst=(
   authorinfo.vim
   vim-table-mode.vim
   vimwiki.vim
+  neocomplete.vim
   YouCompleteMe.vim
   nerdtree.vim
   nerdcommenter.vim
