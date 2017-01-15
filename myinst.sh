@@ -23,7 +23,8 @@ declare -a lst=(
 :git@github.com:Shougo/neocomplete.vim
 :git@github.com:vim-scripts/OmniCppComplete
 :git@github.com:vim-scripts/taglist.vim
-:git@github.com:kien/ctrlp.vim
+:git@github.com:jeaye/color_coded.git
+:git@github.com:mattn/gist-vim
 git@github.com:vim-scripts/git-file.vim
 git@github.com:vim-voom/VOoM
 git@github.com:vimwiki/vimwiki
@@ -42,14 +43,12 @@ git@github.com:alvan/vim-closetag
 git@github.com:vim-scripts/bufkill.vim
 git@github.com:majutsushi/tagbar
 git@github.com:mattn/webapi-vim
-:git@github.com:mattn/gist-vim
 git@github.com:lambdalisue/vim-gista.git
 git@github.com:dhruvasagar/vim-table-mode
 git@github.com:godlygeek/tabular
 git@github.com:maksimr/vim-jsbeautify
 git@github.com:scrooloose/nerdcommenter
 git@github.com:gerw/vim-latex-suite
-:git@github.com:jeaye/color_coded.git
 git@github.com:rdnetto/YCM-Generator
 git@github.com:SirVer/ultisnips
 git@github.com:honza/vim-snippets
@@ -58,6 +57,10 @@ git@github.com:Chiel92/vim-autoformat
 git@github.com:kchmck/vim-coffee-script
 git@github.com:wavded/vim-stylus
 git@github.com:posva/vim-vue
+git@github.com:tpope/vim-fugitive
+git@github.com:airblade/vim-gitgutter
+git@github.com:kien/ctrlp.vim
+git@github.com:easymotion/vim-easymotion
 git@github.com:Valloric/YouCompleteMe
 );
 
