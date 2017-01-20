@@ -19,7 +19,7 @@ Plugin 'VundleVim/Vundle.vim' " let Vundle manage Vundle, required
 " The following are examples of different formats supported.
 " plugin on GitHub repo
 
-" Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
 " Plugin 'itchyny/calendar.vim'
 " Plugin 'vim-scripts/OmniCppComplete'
 " Plugin 'vim-scripts/taglist.vim'
