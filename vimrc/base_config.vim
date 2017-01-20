@@ -68,6 +68,8 @@ autocmd FileType python setlocal ts=4
 autocmd FileType python setlocal sw=4
 autocmd FileType python setlocal nolist
 
+autocmd FileType vimwiki setlocal nowrap
+
 if has("gui_running")
   set mouse=a
   if has("gui_gtk2")
