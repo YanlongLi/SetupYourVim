@@ -18,7 +18,7 @@ else
 fi
 
 declare -a lst=(
-:git@github.com:scrooloose/syntastic
+git@github.com:scrooloose/syntastic
 :git@github.com:itchyny/calendar.vim
 :git@github.com:Shougo/neocomplete.vim
 :git@github.com:vim-scripts/OmniCppComplete

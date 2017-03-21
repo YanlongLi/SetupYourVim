@@ -3,4 +3,4 @@
 "          Desc: 
 "      HomePage: 
 " =============================================================================
-let g:closetag_filenames = "*.html"
+let g:closetag_filenames = "*.html,*.xml"

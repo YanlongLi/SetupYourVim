@@ -57,6 +57,7 @@ set vb " visualbell
 autocmd BufNewFile,BufRead *.tsv set filetype=tsv
 
 autocmd FileType tsv setlocal listchars=tab:<-
+autocmd FileType tsv setlocal noexpandtab
 autocmd FileType tsv setlocal list
 
 autocmd FileType jade setlocal noexpandtab
