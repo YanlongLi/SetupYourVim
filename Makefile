@@ -2,8 +2,8 @@
 dir_vimrc=vimrc
 dir_snips=mysnippets
 
-vimrc: ./vimrc/generage.sh
-	@$(dir_vimrc)/generage.sh
+vimrc: ./vimrc/generate.sh
+	@$(dir_vimrc)/generate.sh
 	@echo "Generate vimrc done"
 
 mysnip:

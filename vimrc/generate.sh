@@ -57,6 +57,7 @@ declare -a lst=(
   vim-autoformat.vim
   vim-coffee-script.vim
   syntastic.vim
+  indentline.vim
 );
 
 filedir="$( cd "$( dirname "${BASH_SOURCE[0]}"  )" && pwd  )"

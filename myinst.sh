@@ -62,6 +62,7 @@ git@github.com:airblade/vim-gitgutter
 git@github.com:kien/ctrlp.vim
 git@github.com:easymotion/vim-easymotion
 git@github.com:Valloric/YouCompleteMe
+git@github.com:Yggdroot/indentLine
 );
 
 # ultisnips is snip engine
