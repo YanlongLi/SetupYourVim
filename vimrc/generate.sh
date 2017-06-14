@@ -51,6 +51,7 @@ declare -a lst=(
   neocomplete.vim
   YouCompleteMe.vim
   nerdtree.vim
+  vim-nerdtree-tabs.vim
   nerdcommenter.vim
   vim-latex-suite.vim
   vim-jsbeautify.vim
