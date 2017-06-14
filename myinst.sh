@@ -38,6 +38,7 @@ git@github.com:cakebaker/scss-syntax.vim
 git@github.com:dantezhu/authorinfo
 git@github.com:tpope/vim-surround
 git@github.com:scrooloose/nerdtree
+git@github.com:jistr/vim-nerdtree-tabs
 git@github.com:pangloss/vim-javascript
 git@github.com:alvan/vim-closetag
 git@github.com:vim-scripts/bufkill.vim
