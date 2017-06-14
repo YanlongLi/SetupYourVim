@@ -65,6 +65,8 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'easymotion/vim-easymotion'
 " Plugin 'Valloric/YouCompleteMe'
 Plugin 'Yggdroot/indentLine'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required, To ignore plugin indent changes, instead use: filetype plugin on
