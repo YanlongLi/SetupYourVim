@@ -68,5 +68,8 @@ if [[ "$ForWindows" != true ]] && [[ "$DoInit" = true ]]; then
   rsync "$__dir__/ycm_extra_conf.py" $VIMFILEDIR/.ycm_extra_conf.py
   vitalsnip="$VIMFILEDIR/bundle/neosnippet-snippets/neosnippets/vim/vital.snip"
   [[ -f $vitalsnip ]] && rm -f $vitalsnip
+  # Build YCM
+  echo "Command to Rebuild YCM:"
+  echo "$HOME/.vim/bundle/YouCompleteMe/install.py --system-libclang --system-boost --clang-completer --tern-completer #--omnisharp-completer"
 fi
 
