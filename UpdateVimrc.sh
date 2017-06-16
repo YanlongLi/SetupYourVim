@@ -6,11 +6,11 @@ if [[ "$1" == "ForWindows" ]]; then
   ForWindows=true
 fi
 
-VIMFILEDIR="~/.vim"
+VIMFILEDIR="$HOME/.vim"
 ConfigDir="$__dir__/vimrc"
 VundleConfigBegin="vundle_config_begin.vim"
 VundleConfigEnd="vundle_config_end.vim"
-OutputFile="~/.vimrc"
+OutputFile="$HOME/.vimrc"
 DoInit=true
 MySnippetsDir="$__dir__/mysnippets"
 
@@ -58,7 +58,7 @@ if [[ "$ForWindows" != true ]] && [[ "$DoInit" = true ]]; then
       fi
       mv $VIMFILEDIR ${VIMFILEDIR}-old
     fi
-    mkdir -p $VIMFILEDIR/bundle/
+    mkdir -p "$VIMFILEDIR/bundle/"
     git clone https://github.com/VundleVim/Vundle.vim.git $VIMFILEDIR/bundle/Vundle.vim > /dev/null 2>&1
   fi
   vim -c ":PluginClean" -c ":PluginInstall"
