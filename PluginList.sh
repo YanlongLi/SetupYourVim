@@ -86,6 +86,7 @@ kien/ctrlp.vim
 easymotion/vim-easymotion
 Yggdroot/indentLine
 bronson/vim-trailing-whitespace
+bonsaiben/bootstrap-snippets
 jvanja/vim-bootstrap4-snippets
 )
 
