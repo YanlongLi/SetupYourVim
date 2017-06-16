@@ -61,7 +61,7 @@ if [[ "$ForWindows" != true ]] && [[ "$DoInit" = true ]]; then
     mkdir -p "$VIMFILEDIR/bundle/"
     git clone https://github.com/VundleVim/Vundle.vim.git $VIMFILEDIR/bundle/Vundle.vim > /dev/null 2>&1
   fi
-  vim -c ":PluginClean" -c ":PluginInstall"
+  vim -c ":PluginClean" -c ":PluginInstall" -c ":qa"
   # Post Init
   rsync -Paq "$__dir__/$MySnippetsDir"/ $VIMFILEDIR/mysnippets/
   rsync "$__dir__/editorconfig" $VIMFILEDIR/.editorconfig
