@@ -64,8 +64,10 @@ git@github.com:kien/ctrlp.vim
 git@github.com:easymotion/vim-easymotion
 git@github.com:Valloric/YouCompleteMe
 git@github.com:Yggdroot/indentLine
-:git@github.com:vim-airline/vim-airline
-:git@github.com:vim-airline/vim-airline-themes
+git@github.com:vim-airline/vim-airline
+git@github.com:vim-airline/vim-airline-themes
+git@github.com:bronson/vim-trailing-whitespace
+git@github.com:jvanja/vim-bootstrap4-snippets
 );
 
 # ultisnips is snip engine

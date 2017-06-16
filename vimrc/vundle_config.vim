@@ -67,6 +67,8 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'Yggdroot/indentLine'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
+Plugin 'bronson/vim-trailing-whitespace'
+Plugin 'jvanja/vim-bootstrap4-snippets'
 
 call vundle#end()            " required
 filetype plugin indent on    " required, To ignore plugin indent changes, instead use: filetype plugin on
