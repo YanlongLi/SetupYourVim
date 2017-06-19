@@ -88,6 +88,7 @@ Yggdroot/indentLine
 bronson/vim-trailing-whitespace
 bonsaiben/bootstrap-snippets
 jvanja/vim-bootstrap4-snippets
+Valloric/YouCompleteMe
 )
 
 declare -a ListLinux=(
@@ -102,13 +103,16 @@ lambdalisue/vim-gista.git
 gerw/vim-latex-suite
 rdnetto/YCM-Generator
 posva/vim-vue
-Valloric/YouCompleteMe
 )
 
 declare -a ListWindows=(
 Shougo/neocomplete.vim
 vim-airline/vim-airline
 vim-airline/vim-airline-themes
+sheerun/vim-polyglot
+MarcWeber/vim-addon-mw-utils
+tomtom/tlib_vim
+garbas/vim-snipmate
 )
 
 declare -a ListConfig=(

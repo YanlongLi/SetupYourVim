@@ -41,6 +41,7 @@ set nofoldenable
 
 set number
 set relativenumber
+set wrap
 
 let mapleader=","
 
