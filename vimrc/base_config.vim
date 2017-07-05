@@ -30,8 +30,8 @@ set autoindent
 set showmatch                   " automatically show matching brackets. works like it does in bbedit.
 
 set ruler                       " show the cursor position all the time
-set ts=2
-set sw=2
+set ts=4
+set sw=4
 set expandtab
 set showcmd
 set wildmenu
