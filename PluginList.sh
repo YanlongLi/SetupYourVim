@@ -89,6 +89,8 @@ bronson/vim-trailing-whitespace
 bonsaiben/bootstrap-snippets
 jvanja/vim-bootstrap4-snippets
 Valloric/YouCompleteMe
+ternjs/tern_for_vim
+reinh/jquery-autocomplete
 )
 
 declare -a ListLinux=(
