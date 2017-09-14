@@ -16,9 +16,9 @@ function usage ()
 
     Options:
     -h|help       Display this message
-    -w|windows
-    -l|linux
-    -c|config
+    -w|windows    Plugin list used in Windows
+    -l|linux	  Plugin list used in linux
+    -c|config	  config file list in repo's vimrc directory
     -v|version    Display script version"
 
 }    # ----------  end of function usage  ----------
