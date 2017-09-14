@@ -6,33 +6,33 @@ Plugins I used can be found in script file [PluginList.sh](./PluginList.sh)
 
 ## Prerequisite
 
-| Packages | ~ |
-| ------ | -- |
-| git | used to download plugins |
-| python-dev| some plugins need python|
-| python3-dev| some plugins need python|
-| libboost-all-dev| used by [YouCompleteMe]() |
-| clang-format| used by [YouCompleteMe]() |
-| cmake| used by [YouCompleteMe]() |
-| clang| used by [YouCompleteMe]() |
-| boost| used by [YouCompleteMe]() |
-| llvm| used by [YouCompleteMe]() |
-| mono-xbuild mono-dmcs| if you want to [YouCompleteMe]() support C#|
-| node nodejs-legacy npm ||
-| astyle| used by [vim-autoformat]() |
-| tidy| used by [vim-autoformat]() |
-| openssh-client||
+| Packages               | ~                                           |
+| ---------------------- | ------------------------------------------- |
+| git                    | used to download plugins                    |
+| python-dev             | some plugins need python                    |
+| python3-dev            | some plugins need python                    |
+| libboost-all-dev       | used by [YouCompleteMe]()                   |
+| clang-format           | used by [YouCompleteMe]()                   |
+| cmake                  | used by [YouCompleteMe]()                   |
+| clang                  | used by [YouCompleteMe]()                   |
+| boost                  | used by [YouCompleteMe]()                   |
+| llvm                   | used by [YouCompleteMe]()                   |
+| mono-xbuild mono-dmcs  | if you want to [YouCompleteMe]() support C# |
+| node nodejs-legacy npm |                                             |
+| astyle                 | used by [vim-autoformat]()                  |
+| tidy                   | used by [vim-autoformat]()                  |
+| openssh-client         |                                             |
 
 
 | python package |
 | -------------- |
-  | autopep8 |
-  | yapf |
+| autopep8       |
+| yapf           |
 
 | nodejs package |
 | -------------- |
-| js-beautify |
-| remark |
+| js-beautify    |
+| remark         |
 
 Setup git
 ```
@@ -85,25 +85,25 @@ $> make vimrc # then edit ~/.vimrc and do some personal config
 
 *TODO*: list an essential set of plugins I need.
 
-| - | - | - | - |
-| ----- | ---- | ---- | ---- |
-| [VOoM]()| | [vimwiki]()||
-| [auto-pairs]()| | [vim-markdown]()||
-| [vim-preview]()| Markdown preview? |
-| [authorinfo]()||
-| [vim-surround]()| | [nerdtree]()||
-| [vim-javascript]()| | [vim-closetag]()||
-| [bufkill.vim]()| | [tagbar]()||
-| [webapi-vim]()| | [gist-vim]()||
-| [vim-table-mode]()| | [tabular]()||
-| [vim-jsbeautify]()| | [nerdcommenter]()| Used to comment code |
-| [vim-latex-suite]()| | [YouCompleteMe]()| Used for code completion|
-| [YCM-Generator]()| | [ultisnips]()||
-| [vim-snippets]()| | [neosnippet-snippets]()||
-| [vim-autoformat]()| | [vim-coffee-script]()||
-| [vim-stylus]()| | [vim-vue]()||
-| [scss-syntax.vim]()| | [vCoolor.vim]()| |
-| [vim-jade]()|| [vim-css-color]()||
+| -                   | -                 | -                       | -                        |
+| ------------------- | ----------------- | ----------------------- | ------------------------ |
+| [VOoM]()            |                   | [vimwiki]()             |                          |
+| [auto-pairs]()      |                   | [vim-markdown]()        |                          |
+| [vim-preview]()     | Markdown preview? |                         |                          |
+| [authorinfo]()      |                   |                         |                          |
+| [vim-surround]()    |                   | [nerdtree]()            |                          |
+| [vim-javascript]()  |                   | [vim-closetag]()        |                          |
+| [bufkill.vim]()     |                   | [tagbar]()              |                          |
+| [webapi-vim]()      |                   | [gist-vim]()            |                          |
+| [vim-table-mode]()  |                   | [tabular]()             |                          |
+| [vim-jsbeautify]()  |                   | [nerdcommenter]()       | Used to comment code     |
+| [vim-latex-suite]() |                   | [YouCompleteMe]()       | Used for code completion |
+| [YCM-Generator]()   |                   | [ultisnips]()           |                          |
+| [vim-snippets]()    |                   | [neosnippet-snippets]() |                          |
+| [vim-autoformat]()  |                   | [vim-coffee-script]()   |                          |
+| [vim-stylus]()      |                   | [vim-vue]()             |                          |
+| [scss-syntax.vim]() |                   | [vCoolor.vim]()         |                          |
+| [vim-jade]()        |                   | [vim-css-color]()       |                          |
 
 [VOoM]: https://github.com/vim-voom/VOoM
 [vimwiki]: https://github.com/vimwiki/vimwiki
