@@ -120,6 +120,7 @@ garbas/vim-snipmate
 declare -a ListConfig=(
   base_config.vim
   status_line.vim
+  vim-airline.vim
   fcitx-fix.vim
   closetag.vim
   vim-css-color.vim
