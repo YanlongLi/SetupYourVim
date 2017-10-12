@@ -13,7 +13,7 @@ set encoding=utf-8
 
 "echo 'gui:' has("gui_running") 'term:' &t_Co+0
 set t_Co=256 
-set mouse=c       											        " no mouse to command line mode ====
+set mouse=nicr       											        " no mouse to command line mode ====
 set hlsearch    											        " highlight for search 
 highlight Search gui=bold,underline cterm=bold,underline
 highlight Search ctermbg=darkgrey
