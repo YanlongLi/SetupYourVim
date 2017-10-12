@@ -1,4 +1,4 @@
-#!/usr/bin/bash
+#!/usr/bin/env bash
 __dir__="$(dirname "$0")"
 
 ForWindows=false
