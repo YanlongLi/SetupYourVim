@@ -1,9 +1,9 @@
 " =============================================================================
 "      FileName: authorinfo.vim
-"          Desc: 
-"      HomePage: 
+"          Desc:
+"      HomePage:
 " =============================================================================
-let g:vimrc_author='YanlongLi'
-let g:vimrc_email='lansunlong@gmail.com'
-let g:vimrc_homepage='http://www.yanlongli.me' 
-nmap <F4> :AuthorInfoDetect<cr> 
+let g:vimrc_author='<your name>'
+let g:vimrc_email='<your email>'
+let g:vimrc_homepage='<your homepage>'
+nmap <F4> :AuthorInfoDetect<cr>
