@@ -41,7 +41,7 @@ flags = [
 'c++',
 '-I',
 '.',
-'-isystem', '/usr/include/c++/v1'
+'-isystem', '/usr/include'
 ]
 
 
