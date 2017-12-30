@@ -7,7 +7,7 @@ Plugins I used can be found in script file [PluginList.sh](./PluginList.sh)
 ## Prerequisite
 
 | Packages               | ~                                           |
-| ---------------------- | ------------------------------------------- |
+|------------------------|---------------------------------------------|
 | git                    | used to download plugins                    |
 | python-dev             | some plugins need python                    |
 | python3-dev            | some plugins need python                    |
@@ -22,6 +22,10 @@ Plugins I used can be found in script file [PluginList.sh](./PluginList.sh)
 | astyle                 | used by [vim-autoformat]()                  |
 | tidy                   | used by [vim-autoformat]()                  |
 | openssh-client         |                                             |
+| vim-nox                | used by vim-preview (ruby support)          |
+| ruby, ruby-dev         | used by vim-preview (ruby support)          |
+| gem                    | used by vim-preview (ruby support)          |
+| redcarpet              | used by vim-preview (ruby support)          |
 
 
 | python package |

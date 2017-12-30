@@ -6,6 +6,7 @@
 let g:ycm_auto_trigger = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_echo_current_diagnostic=1
+let g:ycm_confirm_extra_conf = 0
 
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
 
