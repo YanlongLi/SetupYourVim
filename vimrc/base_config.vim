@@ -39,6 +39,8 @@ set lazyredraw
 set foldmethod=indent
 set nofoldenable
 
+set paste
+
 set number
 set relativenumber
 set wrap
