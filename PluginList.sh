@@ -91,6 +91,7 @@ jvanja/vim-bootstrap4-snippets
 Valloric/YouCompleteMe
 ternjs/tern_for_vim
 reinh/jquery-autocomplete
+mtth/scratch.vim
 )
 
 declare -a ListLinux=(
@@ -139,6 +140,7 @@ declare -a ListConfig=(
   vim-coffee-script.vim
   syntastic.vim
   indentline.vim
+  scratch.vim
 );
 
 if [[ "$ForConfig" = true ]]; then
